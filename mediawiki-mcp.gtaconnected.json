@@ -1,0 +1,12 @@
+{
+  "defaultWiki": "wiki.gtaconnected.com",
+  "wikis": {
+    "wiki.gtaconnected.com": {
+      "sitename": "GTA Connected",
+      "server": "https://wiki.gtaconnected.com",
+      "articlepath": "",
+      "scriptpath": "/wiki",
+      "readOnly": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "gtaconnected-wiki": {
+      "command": "npx",
+      "args": ["-y", "@professional-wiki/mediawiki-mcp-server@latest"],
+      "env": {
+        "CONFIG": "mediawiki-mcp.gtaconnected.json"
+      }
+    }
+  }
+}
