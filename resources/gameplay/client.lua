@@ -33,6 +33,6 @@ addNetworkHandler("giveWeaponSet", function(tier)
 	if not set then return end
 
 	for _, weapon in ipairs(set) do
-		localPlayer.giveWeapon(weapon[1], weapon[2], weapon[3])
+		localPlayer:giveWeapon(weapon[1], weapon[2], weapon[3])
 	end
 end)

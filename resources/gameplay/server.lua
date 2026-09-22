@@ -25,11 +25,11 @@ addEventHandler("OnPlayerCommand", function(event, client, command, parameters)
 
 	local tier = tonumber(parameters) or 1
 	if tier < 1 or tier > 3 then
-		messageClient("ใช้คำสั่ง: /weapons <1-3>", client)
+		messageClient("Usage: /weapons <1-3>", client)
 		return
 	end
 
 	-- giveWeapon must run client-side (server-side ped.giveWeapon is broken in this build)
 	triggerNetworkEvent("giveWeaponSet", client, tier)
-	messageClient("ได้รับชุดอาวุธ " .. tier, client)
+	messageClient("Received weapon set " .. tier, client)
 end)

@@ -51,6 +51,7 @@
 	<cvar name="SinglePlayer" value="1" />
 	<cvar name="Ambulances" value="1" />
 	<cvar name="DefaultParkedCars" value="1" />
+	<cvar name="GunShops" value="1" />
 
 	<!-- Rules -->
 	<!-- https://wiki.gtaconnected.com/ServerRules -->
