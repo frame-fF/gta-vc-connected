@@ -33,3 +33,24 @@ addEventHandler("OnPlayerCommand", function(event, client, command, parameters)
 	triggerNetworkEvent("giveWeaponSet", client, tier)
 	messageClient("Received weapon set " .. tier, client)
 end)
+
+addEventHandler("OnPlayerCommand", function(event, client, command, parameters)
+	if command ~= "skin" then return end
+
+	local skinId = tonumber(parameters)
+	if not skinId then
+		messageClient("Usage: /skin <id>", client)
+		return
+	end
+
+	local player = client.player
+	if not player then
+		messageClient("Spawn in first", client)
+		return
+	end
+
+	-- ped.skin doesn't force a model refresh; respawning with a skin id does
+	local pos = player.position
+	spawnPlayer(client, {pos.x, pos.y, pos.z}, 0, skinId)
+	messageClient("Skin set to " .. skinId, client)
+end)

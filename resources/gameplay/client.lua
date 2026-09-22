@@ -9,12 +9,14 @@ local weaponSets = {
 		{3, 200, true},  -- Uzi
 		{5, 300, false}, -- AK47
 		{10, 10, false}, -- Molotov
+		{11, 10, false}, -- Grenade
 	},
 	[3] = { -- Weapon Set 3
 		{6, 300, true},  -- M16
 		{7, 50, false},  -- Sniper Rifle
 		{8, 10, false},  -- Rocket Launcher
 		{9, 100, false}, -- Flamethrower
+		{12, 1, false},  -- Detonator
 	},
 }
 
