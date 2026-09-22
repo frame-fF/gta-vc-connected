@@ -2,9 +2,17 @@ local function respawnPlayer(client)
 	spawnPlayer(client, {-362.94, 239.359, 60.654}, 0, 0)
 end
 
+local function showHelp(client)
+	messageClient("-- Commands --", client)
+	messageClient("/weapons <1-3> - get a weapon set", client)
+	messageClient("/skin <id> - change your skin", client)
+	messageClient("/help - show this list", client)
+end
+
 addEventHandler("OnPlayerJoined", function(event, client)
 	respawnPlayer(client)
 	fadeCamera(client, true)
+	showHelp(client)
 end)
 
 addEventHandler("onPedWasted", function(event, wastedPed)
@@ -18,6 +26,12 @@ addEventHandler("onPedWasted", function(event, wastedPed)
 		spawnPlayer(client, deathPosition, 0, 0)
 		fadeCamera(client, true)
 	end, 3000)
+end)
+
+addEventHandler("OnPlayerCommand", function(event, client, command, parameters)
+	if command ~= "help" then return end
+
+	showHelp(client)
 end)
 
 addEventHandler("OnPlayerCommand", function(event, client, command, parameters)
