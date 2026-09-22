@@ -11,8 +11,8 @@ addEventHandler("onPedWasted", function(event, wastedPed)
 	local pos = wastedPed.position
 	local deathPosition = {pos.x, pos.y, pos.z}
 
-	setTimer(function()
+	setTimeout(function()
 		spawnPlayer(wastedPed, deathPosition, 0, 0)
 		fadeCamera(wastedPed, true)
-	end, 3000, 1)
+	end, 3000)
 end)
