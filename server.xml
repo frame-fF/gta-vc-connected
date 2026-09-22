@@ -47,6 +47,10 @@
 	<!-- https://wiki.gtaconnected.com/CVars -->
 	<cvar name="traffic" value="1" />
 	<cvar name="civilians" value="1" />
+	<cvar name="DefaultPickups" value="1" />
+	<cvar name="SinglePlayer" value="1" />
+	<cvar name="Ambulances" value="1" />
+	<cvar name="DefaultParkedCars" value="1" />
 
 	<!-- Rules -->
 	<!-- https://wiki.gtaconnected.com/ServerRules -->
