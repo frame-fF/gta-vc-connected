@@ -1,30 +1,20 @@
--- weapon id, ammo, setAsCurrent (ids per GTA VC weapon list)
+-- weapon id, ammo, setAsCurrent (ids per GTA III weapon list)
 local weaponSets = {
 	[1] = { -- Weapon Set 1
-		{1, 1, false},    -- Brass Knuckle
-		{2, 1, false},    -- Screwdriver
-		{17, 100, true},  -- Colt 45
-		{19, 50, false},  -- Chrome Shotgun
-		{23, 200, false}, -- Uzi 9mm
-		{15, 10, false},  -- Molotov
+		{1, 1, false},   -- Bat
+		{2, 100, true},  -- Pistol
+		{4, 50, false},  -- Shotgun
 	},
 	[2] = { -- Weapon Set 2
-		{5, 1, false},    -- Knife
-		{18, 100, true},  -- Python .357
-		{20, 50, false},  -- Spaz Shotgun
-		{22, 200, false}, -- Tec-9
-		{25, 200, false}, -- MP5
-		{12, 10, false},  -- Grenade
+		{3, 200, true},  -- Uzi
+		{5, 300, false}, -- AK47
+		{10, 10, false}, -- Molotov
 	},
 	[3] = { -- Weapon Set 3
-		{11, 1, false},   -- Chainsaw
-		{10, 1, false},   -- Katana
-		{26, 300, true},  -- M4
-		{27, 300, false}, -- Ruger
-		{28, 50, false},  -- Sniper Rifle
-		{30, 10, false},  -- Rocket Launcher
-		{31, 100, false}, -- Flame Thrower
-		{33, 500, false}, -- Minigun
+		{6, 300, true},  -- M16
+		{7, 50, false},  -- Sniper Rifle
+		{8, 10, false},  -- Rocket Launcher
+		{9, 100, false}, -- Flamethrower
 	},
 }
 

@@ -4,8 +4,8 @@
 
 <server>
 	<!-- General Information -->
-	<servername>GTA VC: Classic</servername>
-	<game>gta:vc</game>
+	<servername>GTA III: Classic</servername>
+	<game>gta:iii</game>
 	<gamemode>Classic</gamemode>
 	<serverbrowser>true</serverbrowser>
 	<maxplayers>100</maxplayers>
@@ -31,12 +31,6 @@
 	<!-- Logging -->
 	<logpath>logs</logpath>
 	<logtimestamp>[%d/%m/%Y - %X]</logtimestamp>
-
-	<!-- GTA IV -->
-	<!-- https://wiki.gtaconnected.com/Resources/GTAIV/GameModes -->
-	<!-- https://wiki.gtaconnected.com/Resources/GTAIV/Episodes -->
-	<iv_gamemode>16</iv_gamemode>
-	<iv_episode>-1</iv_episode>
 
 	<!-- Modules -->
 	<!-- https://wiki.gtaconnected.com/Modules -->
