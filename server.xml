@@ -6,7 +6,7 @@
 	<!-- General Information -->
 	<servername>GTA VC: Classic</servername>
 	<game>gta:vc</game>
-	<gamemode>Free Roam</gamemode>
+	<gamemode>Classic</gamemode>
 	<serverbrowser>true</serverbrowser>
 	<maxplayers>100</maxplayers>
 	<password></password>
