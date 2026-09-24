@@ -1,6 +1,6 @@
 <meta>
 	<info author="frame" description="Very basic default gamemode." />
 
-	<script src="server.lua" type="server" language="lua" />
-	<script src="client.lua" type="client" language="lua" />
+	<script src="server/server.lua" type="server" language="lua" />
+	<script src="client/client.lua" type="client" language="lua" />
 </meta>
